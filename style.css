@@ -1,0 +1,109 @@
+/**
+============= Variables ===========
+**/
+
+:root {
+    --color-primary-1: hsl(136, 65%, 51%);
+    --color-primary-2: hsl(192, 70%, 51%);
+    --color-primary-3: hsl(233, 26%, 24%);
+
+    --color-neutral-100: hsl(0, 0%, 100%);
+    --color-neutral-200: hsl(0, 0%, 98%);
+    --color-neutral-300: hsl(220, 16%, 96%);
+    --color-neutral-400: hsl(233, 8%, 62%);
+
+    --font-primary: 'Public Sans', sans-serif;
+}
+
+
+
+/**
+=============== Normalization ===================
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 17px;
+}
+
+/**
+======== Reusables ================
+**/
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 15px 40px;
+    border: none;
+    color: var(--color-neutral-100);
+    background-image: linear-gradient(to right bottom, var(--color-primary-1), var(--color-primary-2));
+    border-radius: 37px;
+    font-weight: 500;
+}
+
+/**
+============== Header Styles =================
+**/
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    padding: 20px 0;
+    color: var(--color-neutral-400);
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+/**
+* ================== Hero Styles ===============
+**/
+
+.hero-section {
+    background-color: var(--color-neutral-200);
+    background-image: url('./images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.hero-section .container {
+    display: flex;
+}
+
+.hero-section .hero-content {
+    width: 30%;
+    padding: 200px 0;
+}
+
+.hero-content .hero-title {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.hero-content .hero-text {
+    margin: 30px 0;
+    color: var(--color-neutral-400);
+    line-height: 1.7;
+}
+
+.hero-banner {}
