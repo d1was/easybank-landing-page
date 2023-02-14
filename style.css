@@ -80,6 +80,10 @@ nav {
     gap: 30px;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 
 /**
 * ================== Hero Styles ===============
